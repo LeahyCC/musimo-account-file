@@ -1,6 +1,6 @@
 # Account file command
 
-A program [Musimo](https://github.com/LeahyCC/musimo) can run on a Deezer account file after it has been saved unchanged.
+A program [Musimo](https://github.com/LeahyCC/musimo) can run on a Deezer account file after it has been saved unchanged. Musimo should already be installed. The [setup handoff](docs/setup-handoff.md) mounts this program into that installation and saves the command.
 
 Musimo does not run a shell. It splits **Command for the account file** with POSIX quoting and adds the absolute path of `account.bin` as the last argument. The working directory is the job folder. This program reads `track_id` from `job.json` there, turns the saved file into audio, and replaces `account.bin` in place. Musimo keeps the file when it plays.
 
